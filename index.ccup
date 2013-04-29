@@ -1,0 +1,94 @@
+doctype 5
+html ->
+  head ->
+    title 'factory consultant: a puzzle game by Louis Acresti'
+    script src:'jquery.min.js'
+    text '''
+    <meta property="og:title" content="factory consultant: a puzzle game by Louis Acresti" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://louroboros-1gam201304.s3-website-us-east-1.amazonaws.com/" />
+    <meta property="og:image" content="http://louroboros-1gam201304.s3-website-us-east-1.amazonaws.com/assets/icon.png" />
+    <meta property="og:site_name" content="factory consultant" />
+    <meta property="og:description" content="A puzzle game. Can you bring the factory back up to speed?" />
+    '''
+
+    script src:'main-built.js'
+
+    style '''
+      html {
+        background: #222;
+        font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+        font-size: 12px;
+        color: white;
+      }
+      * {
+        /*
+        box-sizing: border-box;
+        */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      body {
+        width: 900px;
+        margin: auto;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      a {
+        color: #004d8f;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      #container {
+        width: 810px;
+        height 651px;
+        margin: auto;
+        border: 5px solid #777;
+      }
+
+      canvas {
+        background: url('assets/bg.png');
+        width: 100%;
+        height: 100%;
+        image-rendering: optimizeSpeed;             // Older versions of FF
+        image-rendering: -moz-crisp-edges;          // FF 6.0+
+        image-rendering: -webkit-optimize-contrast; // Webkit
+                                                    //  (Safari now, Chrome soon)
+        image-rendering: optimize-contrast;         // Possible future browsers.
+        -ms-interpolation-mode: nearest-neighbor;   // IE
+      }
+    '''
+  body ->
+    h1 'factory consultant'
+    div id:'container'
+    center ->
+      p ->
+        text 'Add items by dragging them onto the board from the toolbox on the bottom.'
+        br ''
+        text 'Remove items by dragging them into the trash.'
+        br ''
+        text '[SPACE] to start/stop the factory.'
+        br ''
+        text '[M] to toggle sound.'
+      p ->
+        text 'Made by <a target="_blank" href="http://namuol.github.io/">Louis Acresti</a> for <a target="_blank" href="http://www.onegameamonth.com/louroboros">One Game a Month</a> and <a target="_blank" href="http://www.ludumdare.com/louroboros">Ludum Dare 26</a>.'
+
+    div class:'tweet', ->
+      text '''
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="louroboros">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        '''
+      br ''
+      text '''
+        <a href="https://twitter.com/louroboros" class="twitter-follow-button" data-show-count="false">Follow @louroboros</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      '''
