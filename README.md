@@ -1,6 +1,6 @@
 # factory consultant
 
-A short puzzle game maade for Ludum Dare 26.
+A short puzzle game made for Ludum Dare 26.
 
 ### source code
 
