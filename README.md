@@ -1,6 +1,8 @@
 # factory consultant
 
-A short puzzle game made for Ludum Dare 26.
+[PLAY IT HERE!](http://louroboros-1gam201304.s3-website-us-east-1.amazonaws.com/)
+
+A short puzzle game made for [Ludum Dare 26](http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&uid=12236).
 
 ### source code
 
